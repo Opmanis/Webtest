@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // If everything is validated, submit the form (Should be a PHP form submission)
                 $('#productForm').submit();
                 alert('Product saved successfully!');
-                header("Location: Products.php");
+                window.location.href = 'Products.php';
                 exit(); // Redirect to Product List page after adding
 
             });
