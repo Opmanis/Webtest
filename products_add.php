@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     return false;
                 }
 
-                console.log(sku, name, price, type, attribute);
+                
                 // Validate attribute values based on type
                 if ((type === 'DVD' && isNaN(attribute)) || (type === 'Book' && isNaN(attribute))) {
                     alert('Please provide the data of indicated type');
