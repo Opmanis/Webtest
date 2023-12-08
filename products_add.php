@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!empty($sku) && !empty($name) && !empty($price) && !empty($type)) {
             // Execute SQL insert query only when form is submitted
             if ($insert_product->execute()) {
-                header("Location: Products.php"); // Redirect to Product List page after adding
+                echo '<script> window.location.href = "index.php";</script>'; // Redirect to Product List page after adding // Redirect to Product List page after adding
                 exit();
             } else {
                 echo "Error: " . $insert_product->error;
